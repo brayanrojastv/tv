@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video Player</title>
+<style>
+.wide {
+    width: 700px;
+    height: 450px;
+	margin:20px auto;
+}
+
+.wide video {
+    width: 700px;
+    height: 440px;
+	background:#000;
+}
+h1 {  font-family: Helvetica, Arial, sans-serif;  text-align: center; font-size:50px; margin-top:20px; color:#fff;
+	  text-shadow: 2px 2px 0px rgba(255,255,255,.7), 5px 7px 0px rgba(0, 0, 0, 0.1); 
+}
+video::-webkit-media-controls-panel{
+	backgrjdjound:#000;
+	}
+video::-webkit-media-controls-current-time-display{color:#fff}
+video::-webkit-media-controls-time-remaining-display{color:#fff}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+var adManager = function () {
+    var vid = document.getElementById("vid1564730217"),
+        adSrc = "toonnowad.mp4",
+        src;
+
+    var adEnded = function () {
+        vid.removeEventListener("ended", adEnded, false);
+        vid.src = src;
+        vid.load();
+        vid.play();
+$('<style>video::-webkit-media-controls-play-button{display:block}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-current-time-display{margin-left:0px}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-mute-button{display:block}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-volume-slider{display:block}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-mute-button{display:block}</style>').appendTo('head');
+
+$(window).keypress(function(e) {
+  var video = document.getElementById("vid1564730217");
+  if (e.which == 32) {
+    if (video.paused == true)
+      video.play();
+    else
+      video.pause();
+  }
+});
+$('#vid1564730217').click(function(){this.paused?this.play():this.pause();});
+
+    };
+    return {
+        init: function () {
+            src = vid.src;
+            vid.src = adSrc;
+            vid.load();
+            vid.addEventListener("ended", adEnded, false);
+$('<style>video::-webkit-media-controls-play-button{display:none}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-mute-button{display:none}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-current-time-display{margin-left:20px}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-volume-slider{display:none}</style>').appendTo('head');
+$('<style>video::-webkit-media-controls-mute-button{display:none}</style>').appendTo('head');
+	}};
+   }().init();		
+});
+</script>
+</head>
+
+<body background="../back2.jpeg">
+<h1>100 AÑOS DE SOLEDAD</h1>
+<div class="wide">
+    <div class="content">
+        <video id="vid1564730217" preload="none" autobuffer poster="bunny.jpg" controls controlsList="nodownload"
+        src="https://r6---sn-ja5gvjv-cvbs.googlevideo.com/videoplayback?expire=1582102708&ei=VKRMXojCDIHMgwOVzJ3wAg&ip=168.235.109.23&id=o-ABpLbpbxnXpUfNuisEOPsFGyReJ_ZIoXuq3P6ssg2g69&itag=22&source=youtube&requiressl=yes&pcm2=yes&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=32607.457&lmt=1572688760525422&fvip=6&fexp=23842630&c=WEB&txp=2316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cpcm2%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=ALgxI2wwRgIhAJ39biQwgdNEko49o8EOBYS5GthJ1eKEvZEeZhXpbM2DAiEAvWlzzM4gJo4rBP_ONakjRuLzv7SQ3V_eUa0DXD44hKE%3D&title=CIEN+A%C3%91OS+DE+SOLEDAD+DE+GABRIEL+GARCIA+MARQUEZ+AUDIOLIBRO+COMPLETO+-+PRIMERA+PARTE&cms_redirect=yes&mip=186.84.20.218&mm=31&mn=sn-ja5gvjv-cvbs&ms=au&mt=1582081054&mv=m&mvi=5&pcm2cms=yes&pl=22&lsparams=mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=ABSNjpQwRQIgFu55sWJU9q04k0TuRC8wasWp3lDIuWUp_wxwN26cIcECIQDZi4EF7nXm_9bA2rOdEbFzyOXduug8vrKuEsASEDF6Ig%3D%3D" autoplay>
+        
+            <source src="https://r6---sn-ja5gvjv-cvbs.googlevideo.com/videoplayback?expire=1582102708&ei=VKRMXojCDIHMgwOVzJ3wAg&ip=168.235.109.23&id=o-ABpLbpbxnXpUfNuisEOPsFGyReJ_ZIoXuq3P6ssg2g69&itag=22&source=youtube&requiressl=yes&pcm2=yes&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=32607.457&lmt=1572688760525422&fvip=6&fexp=23842630&c=WEB&txp=2316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cpcm2%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=ALgxI2wwRgIhAJ39biQwgdNEko49o8EOBYS5GthJ1eKEvZEeZhXpbM2DAiEAvWlzzM4gJo4rBP_ONakjRuLzv7SQ3V_eUa0DXD44hKE%3D&title=CIEN+A%C3%91OS+DE+SOLEDAD+DE+GABRIEL+GARCIA+MARQUEZ+AUDIOLIBRO+COMPLETO+-+PRIMERA+PARTE&cms_redirect=yes&mip=186.84.20.218&mm=31&mn=sn-ja5gvjv-cvbs&ms=au&mt=1582081054&mv=m&mvi=5&pcm2cms=yes&pl=22&lsparams=mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=ABSNjpQwRQIgFu55sWJU9q04k0TuRC8wasWp3lDIuWUp_wxwN26cIcECIQDZi4EF7nXm_9bA2rOdEbFzyOXduug8vrKuEsASEDF6Ig%3D%3D" type="video/mp4">
+		</video>
+    </div>
+    <h4>cap 2: 32;46 !! cap 3: 1:32:29 !! cap 4: 2:28:42</h4>
+</div>
+</body>
+</html>
